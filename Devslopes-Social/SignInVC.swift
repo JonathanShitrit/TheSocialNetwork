@@ -13,7 +13,10 @@ import Firebase
 
 class SignInVC: UIViewController {
 
+    @IBOutlet weak var emailTextField: CustomTextField!
 
+    @IBOutlet weak var passwordTexField: CustomTextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -52,23 +55,7 @@ class SignInVC: UIViewController {
             }
         }
     }
-    
 
-//        let facebookLogin = FBSDKLoginManager()
-//        
-//        facebookLogin.logIn(withReadPermissions: ["email"], from: self) { (result, error) in
-//            if error != nil {
-//                print("JON: Unable to authenticate with Facebook - \(error)")
-//            } else if (result?.isCancelled == true) {
-//                print("JON: User cancelled Facebook authentication")
-//            } else {
-//                print("JON: User successfully authenticated with Facebook")
-//                let credential = FIRFacebookAuthProvider.credential(withAccessToken: FBSDKAccessToken.current().tokenString)
-//                
-//                self.firebaseAuth(credential)
-//            }
-//        }
-//    }
     
     func firebaseAuth(_ credential: FIRAuthCredential) {
         FIRAuth.auth()?.signIn(with: credential, completion: { (user, error) in
@@ -80,6 +67,24 @@ class SignInVC: UIViewController {
         })
     }
     
+    @IBAction func signInButton(_ sender: UIButton) {
+        if let email = emailTextField.text, let password = passwordTexField.text {
+            FIRAuth.auth()?.signIn(withEmail: email, password: password, completion: { (user, error) in
+                if error == nil {
+                    print("JON: \(email) signed in successfully")
+                } else {
+                    FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
+                        if error != nil {
+                            print("JON: Unable to create user with email and password")
+                        }
+                        else {
+                            print("JON: Successfully created user")
+                        }
+                    })
+                }
+            })
+        }
+    }
 
 }
 
