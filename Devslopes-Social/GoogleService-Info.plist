@@ -7,21 +7,21 @@
 	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
 	<string>ca-app-pub-3940256099942544/4411468910</string>
 	<key>CLIENT_ID</key>
-	<string>989209259064-74olnj08gnn46rjp3su388m987k1d6ec.apps.googleusercontent.com</string>
+	<string>550255718893-4945i7c38987nd4q2lo7cktnhbc19br3.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.989209259064-74olnj08gnn46rjp3su388m987k1d6ec</string>
+	<string>com.googleusercontent.apps.550255718893-4945i7c38987nd4q2lo7cktnhbc19br3</string>
 	<key>API_KEY</key>
-	<string>AIzaSyAGzuWOMSfrubmBbueuCBye1eGWvCVu_ZQ</string>
+	<string>AIzaSyDKzrfzgbUStE3VJWxVmINFMt8cFdenRww</string>
 	<key>GCM_SENDER_ID</key>
-	<string>989209259064</string>
+	<string>550255718893</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.JonathanShitrit.PushMyNotifs</string>
+	<string>com.JonathanShitrit.Devslopes-Social</string>
 	<key>PROJECT_ID</key>
-	<string>pushmynotifs-7a86c</string>
+	<string>thesocialnetwork-dde99</string>
 	<key>STORAGE_BUCKET</key>
-	<string>pushmynotifs-7a86c.appspot.com</string>
+	<string>thesocialnetwork-dde99.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<true/>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -33,8 +33,8 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true/>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:989209259064:ios:ff9e58d94df619fa</string>
+	<string>1:550255718893:ios:66d8a40306ed2a5a</string>
 	<key>DATABASE_URL</key>
-	<string>https://pushmynotifs-7a86c.firebaseio.com</string>
+	<string>https://thesocialnetwork-dde99.firebaseio.com</string>
 </dict>
 </plist>
