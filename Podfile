@@ -12,4 +12,5 @@ target 'Devslopes-Social' do
 	pod ‘Firebase/Storage’
 	pod 'FacebookCore'
 	pod 'FacebookLogin'
+    pod 'SwiftKeychainWrapper', :git => 'https://github.com/jrendel/SwiftKeychainWrapper.git', :branch => 'master'
 end

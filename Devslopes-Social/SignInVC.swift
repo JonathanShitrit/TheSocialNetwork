@@ -10,6 +10,7 @@ import UIKit
 import FacebookCore
 import FacebookLogin
 import Firebase
+import SwiftKeychainWrapper
 
 class SignInVC: UIViewController {
 
@@ -17,9 +18,11 @@ class SignInVC: UIViewController {
 
     @IBOutlet weak var passwordTexField: CustomTextField!
     
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -75,6 +78,10 @@ class SignInVC: UIViewController {
                 } else {
                     FIRAuth.auth()?.createUser(withEmail: email, password: password, completion: { (user, error) in
                         if error != nil {
+                            //Shows incorrect email or password alert
+                            let alert = UIAlertController()
+                            alert.displayAlert(title: "Unable to authenticate", message: "Email or password is incorrect. Please try again.", fromController: self)
+
                             print("JON: Unable to create user with email and password")
                         }
                         else {

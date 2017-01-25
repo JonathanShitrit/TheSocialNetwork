@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0B960C7243D6AFBC48A32B83 /* Pods_Devslopes_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349A998DFDD2D03FD40227AF /* Pods_Devslopes_Social.framework */; };
+		35AA0A001E3838D600E17113 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA09FF1E3838D600E17113 /* AlertExtension.swift */; };
 		35D68C511E318A5500BF3221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D68C501E318A5500BF3221 /* AppDelegate.swift */; };
 		35D68C531E318A5500BF3221 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D68C521E318A5500BF3221 /* SignInVC.swift */; };
 		35D68C561E318A5500BF3221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D68C541E318A5500BF3221 /* Main.storyboard */; };
@@ -22,6 +23,7 @@
 
 /* Begin PBXFileReference section */
 		349A998DFDD2D03FD40227AF /* Pods_Devslopes_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Devslopes_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		35AA09FF1E3838D600E17113 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
 		35D68C4D1E318A5500BF3221 /* Devslopes-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Devslopes-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D68C501E318A5500BF3221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D68C521E318A5500BF3221 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -51,6 +53,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35AA0A011E383A0600E17113 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				35AA09FF1E3838D600E17113 /* AlertExtension.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		35AA0A021E38435C00E17113 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35D68C571E318A5500BF3221 /* Assets.xcassets */,
+				35F3219F1E371CC200982EEA /* GoogleService-Info.plist */,
+				35D68C5C1E318A5500BF3221 /* Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		35D68C441E318A5500BF3221 = {
 			isa = PBXGroup;
 			children = (
@@ -73,15 +93,12 @@
 			isa = PBXGroup;
 			children = (
 				35F3219E1E36EC9500982EEA /* Devslopes-Social.entitlements */,
+				35AA0A021E38435C00E17113 /* Resources */,
 				35F3218D1E364BFD00982EEA /* Util */,
-				35D68C661E31913700BF3221 /* Controller */,
+				35AA0A011E383A0600E17113 /* Extensions */,
 				35D68C651E31913100BF3221 /* View */,
+				35D68C661E31913700BF3221 /* Controller */,
 				35D68C641E31912C00BF3221 /* Model */,
-				35D68C541E318A5500BF3221 /* Main.storyboard */,
-				35D68C571E318A5500BF3221 /* Assets.xcassets */,
-				35D68C591E318A5500BF3221 /* LaunchScreen.storyboard */,
-				35D68C5C1E318A5500BF3221 /* Info.plist */,
-				35F3219F1E371CC200982EEA /* GoogleService-Info.plist */,
 			);
 			path = "Devslopes-Social";
 			sourceTree = "<group>";
@@ -89,7 +106,8 @@
 		35D68C641E31912C00BF3221 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				35D68C501E318A5500BF3221 /* AppDelegate.swift */,
+				35D68C591E318A5500BF3221 /* LaunchScreen.storyboard */,
+				35D68C541E318A5500BF3221 /* Main.storyboard */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -108,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				35D68C521E318A5500BF3221 /* SignInVC.swift */,
+				35D68C501E318A5500BF3221 /* AppDelegate.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -274,6 +293,7 @@
 				35D68C511E318A5500BF3221 /* AppDelegate.swift in Sources */,
 				35F321911E3650F000982EEA /* CustomTextField.swift in Sources */,
 				35F321951E36533400982EEA /* Constants.swift in Sources */,
+				35AA0A001E3838D600E17113 /* AlertExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +337,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -367,6 +388,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -396,6 +418,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = B52F56FFE37035130F75C8C5 /* Pods-Devslopes-Social.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Devslopes-Social/Devslopes-Social.entitlements";
 				DEVELOPMENT_TEAM = QKASN59BPK;
@@ -416,6 +439,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 559E7CCA2B69BBAF9CD0303E /* Pods-Devslopes-Social.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Devslopes-Social/Devslopes-Social.entitlements";
 				DEVELOPMENT_TEAM = QKASN59BPK;
