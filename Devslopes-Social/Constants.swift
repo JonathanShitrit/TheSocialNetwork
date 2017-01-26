@@ -9,3 +9,5 @@
 import UIKit
 
 let shadowGray: CGFloat = 120.0 / 255
+
+let KEY_UID = "uid"

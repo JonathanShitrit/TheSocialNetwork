@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		0B960C7243D6AFBC48A32B83 /* Pods_Devslopes_Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 349A998DFDD2D03FD40227AF /* Pods_Devslopes_Social.framework */; };
 		35AA0A001E3838D600E17113 /* AlertExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA09FF1E3838D600E17113 /* AlertExtension.swift */; };
+		35AA0A041E3944A600E17113 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0A031E3944A600E17113 /* FeedVC.swift */; };
+		35AA0A061E3968A200E17113 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0A051E3968A200E17113 /* RoundButton.swift */; };
+		35AA0A081E39704100E17113 /* CircleImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0A071E39704100E17113 /* CircleImgView.swift */; };
 		35D68C511E318A5500BF3221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D68C501E318A5500BF3221 /* AppDelegate.swift */; };
 		35D68C531E318A5500BF3221 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D68C521E318A5500BF3221 /* SignInVC.swift */; };
 		35D68C561E318A5500BF3221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D68C541E318A5500BF3221 /* Main.storyboard */; };
@@ -24,6 +27,9 @@
 /* Begin PBXFileReference section */
 		349A998DFDD2D03FD40227AF /* Pods_Devslopes_Social.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Devslopes_Social.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		35AA09FF1E3838D600E17113 /* AlertExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertExtension.swift; sourceTree = "<group>"; };
+		35AA0A031E3944A600E17113 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
+		35AA0A051E3968A200E17113 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		35AA0A071E39704100E17113 /* CircleImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImgView.swift; sourceTree = "<group>"; };
 		35D68C4D1E318A5500BF3221 /* Devslopes-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Devslopes-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D68C501E318A5500BF3221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D68C521E318A5500BF3221 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -106,8 +112,8 @@
 		35D68C641E31912C00BF3221 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				35D68C591E318A5500BF3221 /* LaunchScreen.storyboard */,
 				35D68C541E318A5500BF3221 /* Main.storyboard */,
+				35D68C591E318A5500BF3221 /* LaunchScreen.storyboard */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -118,6 +124,8 @@
 				35F3218B1E364BA900982EEA /* CustomView.swift */,
 				35F321901E3650F000982EEA /* CustomTextField.swift */,
 				35F321921E36522C00982EEA /* CustomButton.swift */,
+				35AA0A051E3968A200E17113 /* RoundButton.swift */,
+				35AA0A071E39704100E17113 /* CircleImgView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -127,6 +135,7 @@
 			children = (
 				35D68C521E318A5500BF3221 /* SignInVC.swift */,
 				35D68C501E318A5500BF3221 /* AppDelegate.swift */,
+				35AA0A031E3944A600E17113 /* FeedVC.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -287,10 +296,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35AA0A061E3968A200E17113 /* RoundButton.swift in Sources */,
 				35F3218C1E364BA900982EEA /* CustomView.swift in Sources */,
 				35D68C531E318A5500BF3221 /* SignInVC.swift in Sources */,
 				35F321931E36522C00982EEA /* CustomButton.swift in Sources */,
+				35AA0A081E39704100E17113 /* CircleImgView.swift in Sources */,
 				35D68C511E318A5500BF3221 /* AppDelegate.swift in Sources */,
+				35AA0A041E3944A600E17113 /* FeedVC.swift in Sources */,
 				35F321911E3650F000982EEA /* CustomTextField.swift in Sources */,
 				35F321951E36533400982EEA /* Constants.swift in Sources */,
 				35AA0A001E3838D600E17113 /* AlertExtension.swift in Sources */,
@@ -427,7 +439,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Devslopes-Social/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanShitrit.Devslopes-Social";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -448,7 +460,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = "Devslopes-Social/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.JonathanShitrit.Devslopes-Social";
 				PRODUCT_NAME = "$(TARGET_NAME)";
