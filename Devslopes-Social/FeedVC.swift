@@ -11,19 +11,24 @@ import Firebase
 import SwiftKeychainWrapper
 
 class FeedVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
+    @IBOutlet weak var tableView: UITableView!
+    
     @IBAction func signOutButton(_ sender: UIButton) {
         KeychainWrapper.standard.removeObject(forKey: KEY_UID)
         try! FIRAuth.auth()?.signOut()
         performSegue(withIdentifier: "GoToSignin", sender: nil)
     }
     
-    @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        
+        DataService.ds.REF_POSTS.observe(.value) { (snapshot) in
+            print(snapshot.value)
+        }
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
