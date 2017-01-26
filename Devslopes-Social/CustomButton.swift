@@ -14,9 +14,9 @@ class CustomButton: UIButton {
         super.awakeFromNib()
         
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.6
+        layer.shadowOpacity = 0.5
         layer.shadowOffset = CGSize.zero
-        layer.shadowRadius = 1
+        layer.shadowRadius = 2
         
         layer.cornerRadius = 2.0
     }

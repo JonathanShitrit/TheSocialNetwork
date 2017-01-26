@@ -14,9 +14,9 @@ class CustomView: UIView {
         super.awakeFromNib()
         
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.6
+        layer.shadowOpacity = 0.5
         layer.shadowOffset = CGSize.zero
-        layer.shadowRadius = 4
+        layer.shadowRadius = 3
         layer.cornerRadius = 2.0
     }
 

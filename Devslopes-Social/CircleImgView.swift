@@ -14,9 +14,9 @@ class CircleImgView: UIImageView {
         super.awakeFromNib()
         
         layer.shadowColor = UIColor.black.cgColor
-        layer.shadowOpacity = 0.6
+        layer.shadowOpacity = 0.5
         layer.shadowOffset = CGSize.zero
-        layer.shadowRadius = 4
+        layer.shadowRadius = 3
     
     }
     

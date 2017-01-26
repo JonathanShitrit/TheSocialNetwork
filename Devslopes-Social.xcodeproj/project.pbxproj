@@ -12,11 +12,13 @@
 		35AA0A041E3944A600E17113 /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0A031E3944A600E17113 /* FeedVC.swift */; };
 		35AA0A061E3968A200E17113 /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0A051E3968A200E17113 /* RoundButton.swift */; };
 		35AA0A081E39704100E17113 /* CircleImgView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0A071E39704100E17113 /* CircleImgView.swift */; };
+		35AA0A0A1E39986800E17113 /* PostCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35AA0A091E39986800E17113 /* PostCell.swift */; };
 		35D68C511E318A5500BF3221 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D68C501E318A5500BF3221 /* AppDelegate.swift */; };
 		35D68C531E318A5500BF3221 /* SignInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35D68C521E318A5500BF3221 /* SignInVC.swift */; };
 		35D68C561E318A5500BF3221 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D68C541E318A5500BF3221 /* Main.storyboard */; };
 		35D68C581E318A5500BF3221 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35D68C571E318A5500BF3221 /* Assets.xcassets */; };
 		35D68C5B1E318A5500BF3221 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35D68C591E318A5500BF3221 /* LaunchScreen.storyboard */; };
+		35DEF8A91E3A740B00120BBD /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35DEF8A81E3A740B00120BBD /* DataService.swift */; };
 		35F3218C1E364BA900982EEA /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F3218B1E364BA900982EEA /* CustomView.swift */; };
 		35F321911E3650F000982EEA /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F321901E3650F000982EEA /* CustomTextField.swift */; };
 		35F321931E36522C00982EEA /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F321921E36522C00982EEA /* CustomButton.swift */; };
@@ -30,6 +32,7 @@
 		35AA0A031E3944A600E17113 /* FeedVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
 		35AA0A051E3968A200E17113 /* RoundButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
 		35AA0A071E39704100E17113 /* CircleImgView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleImgView.swift; sourceTree = "<group>"; };
+		35AA0A091E39986800E17113 /* PostCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PostCell.swift; sourceTree = "<group>"; };
 		35D68C4D1E318A5500BF3221 /* Devslopes-Social.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Devslopes-Social.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		35D68C501E318A5500BF3221 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35D68C521E318A5500BF3221 /* SignInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInVC.swift; sourceTree = "<group>"; };
@@ -37,6 +40,7 @@
 		35D68C571E318A5500BF3221 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35D68C5A1E318A5500BF3221 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35D68C5C1E318A5500BF3221 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35DEF8A81E3A740B00120BBD /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		35F3218B1E364BA900982EEA /* CustomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
 		35F321901E3650F000982EEA /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		35F321921E36522C00982EEA /* CustomButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
@@ -98,6 +102,7 @@
 		35D68C4F1E318A5500BF3221 /* Devslopes-Social */ = {
 			isa = PBXGroup;
 			children = (
+				35DEF8A71E3A73F200120BBD /* Services */,
 				35F3219E1E36EC9500982EEA /* Devslopes-Social.entitlements */,
 				35AA0A021E38435C00E17113 /* Resources */,
 				35F3218D1E364BFD00982EEA /* Util */,
@@ -126,6 +131,7 @@
 				35F321921E36522C00982EEA /* CustomButton.swift */,
 				35AA0A051E3968A200E17113 /* RoundButton.swift */,
 				35AA0A071E39704100E17113 /* CircleImgView.swift */,
+				35AA0A091E39986800E17113 /* PostCell.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -133,11 +139,19 @@
 		35D68C661E31913700BF3221 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				35D68C521E318A5500BF3221 /* SignInVC.swift */,
 				35D68C501E318A5500BF3221 /* AppDelegate.swift */,
+				35D68C521E318A5500BF3221 /* SignInVC.swift */,
 				35AA0A031E3944A600E17113 /* FeedVC.swift */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		35DEF8A71E3A73F200120BBD /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				35DEF8A81E3A740B00120BBD /* DataService.swift */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 		35F3218D1E364BFD00982EEA /* Util */ = {
@@ -299,11 +313,13 @@
 				35AA0A061E3968A200E17113 /* RoundButton.swift in Sources */,
 				35F3218C1E364BA900982EEA /* CustomView.swift in Sources */,
 				35D68C531E318A5500BF3221 /* SignInVC.swift in Sources */,
+				35DEF8A91E3A740B00120BBD /* DataService.swift in Sources */,
 				35F321931E36522C00982EEA /* CustomButton.swift in Sources */,
 				35AA0A081E39704100E17113 /* CircleImgView.swift in Sources */,
 				35D68C511E318A5500BF3221 /* AppDelegate.swift in Sources */,
 				35AA0A041E3944A600E17113 /* FeedVC.swift in Sources */,
 				35F321911E3650F000982EEA /* CustomTextField.swift in Sources */,
+				35AA0A0A1E39986800E17113 /* PostCell.swift in Sources */,
 				35F321951E36533400982EEA /* Constants.swift in Sources */,
 				35AA0A001E3838D600E17113 /* AlertExtension.swift in Sources */,
 			);
