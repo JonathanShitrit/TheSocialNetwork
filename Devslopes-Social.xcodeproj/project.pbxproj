@@ -109,9 +109,9 @@
 				35F3218D1E364BFD00982EEA /* Util */,
 				35DEF8A71E3A73F200120BBD /* Services */,
 				35AA0A011E383A0600E17113 /* Extensions */,
+				35D68C641E31912C00BF3221 /* Model */,
 				35D68C651E31913100BF3221 /* View */,
 				35D68C661E31913700BF3221 /* Controller */,
-				35D68C641E31912C00BF3221 /* Model */,
 			);
 			path = "Devslopes-Social";
 			sourceTree = "<group>";
