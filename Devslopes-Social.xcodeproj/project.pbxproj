@@ -77,8 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				35D68C571E318A5500BF3221 /* Assets.xcassets */,
-				35F3219F1E371CC200982EEA /* GoogleService-Info.plist */,
 				35D68C5C1E318A5500BF3221 /* Info.plist */,
+				35F3219F1E371CC200982EEA /* GoogleService-Info.plist */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
